@@ -979,6 +979,9 @@ def main():
     parser.add_argument("--no-ui", action="store_true", help="play one run in the terminal, without a window")
     parser.add_argument("--auto", action="store_true", help="play every level of every game (or of the game "
                                                             "given) by itself, in the terminal")
+    parser.add_argument("--all", action="store_true", help="play every level of every game (or of the game "
+    "given) by itself, in the terminal")
+
     parser.add_argument("--parallel", type=int, default=4, help="with --auto: how many games are played at once")
     parser.add_argument("--browser", action="store_true", help="show it in a browser tab instead of its own window")
     parser.add_argument("--port", type=int, default=VIEWER_PORT, help="the page's port on this computer")
